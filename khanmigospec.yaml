@@ -40,17 +40,3 @@ paths:
                       type: string
                       format: uri
                       description: The URL to access the content.
-              example:
-                - description: "It's a great, big universe out there..."
-                  kind: Course
-                  title: Cosmology and astronomy
-                  url: https://khanacademy.org/science/cosmology-and-astronomy
-                - kind: Article
-                  title: Simulations in astronomy
-                  url: https://khanacademy.org/computing/ap-computer-science-principles/x2d2f703b37b450a3:simulations/x2d2f703b37b450a3:exploring-simulations/a/astronomy-simulations
-                - kind: Video
-                  title: Neutrino astronomy: a new frontier
-                  url: https://khanacademy.org/college-careers-more/bjc/2019-challenge/2019-challenge-finalists/v/neutrino-astronomy-a-new-frontier
-                - kind: Video
-                  title: Detectable civilizations in our galaxy 4
-                  url: https://khanacademy.org/science/cosmology-and-astronomy/life-earth-universe/life-in-universe-topic/v/detectable-civilizations-in-our-galaxy-4
