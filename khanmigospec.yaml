@@ -23,20 +23,4 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    description:
-                      type: string
-                      description: A brief overview of the content.
-                    kind:
-                      type: string
-                      description: The type of content (e.g., Course, Article, Video).
-                    title:
-                      type: string
-                      description: The title of the content.
-                    url:
-                      type: string
-                      format: uri
-                      description: The URL to access the content.
+                type: string
