@@ -1,19 +1,22 @@
 openapi: 3.0.1
 info:
   title: Khanmigo
-  description: A plugin that is an AI powered tutor that uses material from the reputable and trusted source of Khan Academy. Khanmigo is trustworthy, provides continuity across the learning journey, and provides embedded Khan Academy content. 
+  description: An endpoint to get a list of tutorials to educate the user on an educational topic if the user keeps asking questions related to the same topic. 
   version: 0.1.0
 servers:
   - url: https://www.khanacademy.org/api/internal/_rg/khanmigo
 paths:
   /search_content:
-    get:
+    get: {
+      tags: 
+       - khanmigo-tutorials-endpoint
+      summary: API for fetching khanacademy tutorials list,
       operationId: getTutorial
-      description: Gets the probable tutorial given the subject matter.
+      description: Tutorial Endpoint. Query for tutorials.
       parameters:
         - name: query
           in: query
-          description: The subject being searched for
+          description: A precise query that matches an educational topic that needs to be searched for to find the tuorials to help the user. if the user keeps repeatedly asking questions related to a particular topic use that educational topic as query (example: what is the log(2)? what is log(2)+log(n)? what is log base 2?, use logarithms as the query) If the user explicitly stated what they want, use that as a query.
           required: true
           schema:
             type: string
