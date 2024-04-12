@@ -10,7 +10,7 @@ paths:
     get: {
       tags: 
        - khanmigo-tutorials-endpoint
-      summary: API for fetching khanacademy tutorials list,
+      summary: API for fetching khanacademy tutorials list
       operationId: getTutorial
       description: Tutorial Endpoint. Query for tutorials.
       parameters:
