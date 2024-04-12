@@ -11,12 +11,12 @@ paths:
       tags: 
        - khanmigo-tutorials-endpoint
       summary: API for fetching khanacademy tutorials list
-      operationId: getTutorial
-      description: Tutorial Endpoint. Query for tutorials.
+      operationId: get_tutorials_list
+      description: Endpoint to query for tutorials.
       parameters:
         - name: query
           in: query
-          description: A precise query that matches an educational topic that needs to be searched for to find the tuorials to help the user. if the user keeps repeatedly asking questions related to a particular topic use that educational topic as query (example: what is the log(2)? what is log(2)+log(n)? what is log base 2?, use logarithms as the query) If the user explicitly stated what they want, use that as a query.
+          description: The educational topic, for which we need the list of tutorials, is passed in this parameter (example: astronomy, math, logarithms, marinebiology).
           required: true
           schema:
             type: string
