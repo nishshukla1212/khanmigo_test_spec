@@ -11,7 +11,7 @@ paths:
       tags: 
        - Tutorials
       summary: API for fetching khanacademy tutorials list
-      operationId: getTutorialsList
+      operationId: GetTutorials
       description: Endpoint to query for tutorials.
       parameters:
         - name: query
