@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: Khanmigo
-  description: An endpoint to get a list of tutorials to educate the user on an educational topic if the user keeps asking questions related to the same topic. 
+  description: An endpoint to get a list of tutorials on a topic. 
   version: 0.1.0
 servers:
   - url: https://www.khanacademy.org/api/internal/_rg/khanmigo
