@@ -1,27 +1,29 @@
 openapi: 3.0.1
 info:
   title: Khanmigo
-  description: An endpoint to get a list of tutorials on a topic. 
+  description: An endpoint to get a list of tutorials on a topic.
   version: 0.1.0
 servers:
   - url: https://www.khanacademy.org/api/internal/_rg/khanmigo
 paths:
   /search_content:
     get:
-      tags: 
-       - Tutorials
+      tags:
+        - Tutorials
       summary: API for fetching khanacademy tutorials list
       operationId: GetTutorials
       description: Endpoint to query for tutorials.
       parameters:
         - name: query
           in: query
-          description: The topic, for which we need the list of tutorials, is passed in this parameter (example: astronomy, math, logarithms, marinebiology, addition, space etc.).
+          description: "The topic, for which we need the list of tutorials, is passed in
+            this parameter (example: astronomy, math, logarithms, marinebiology,
+            addition, space etc.)"
           required: true
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: OK
           content:
             application/json:
