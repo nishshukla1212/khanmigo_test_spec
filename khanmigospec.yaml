@@ -7,16 +7,16 @@ servers:
   - url: https://www.khanacademy.org/api/internal/_rg/khanmigo
 paths:
   /search_content:
-    get: {
+    get:
       tags: 
-       - khanmigo-tutorials-endpoint
+       - Tutorials
       summary: API for fetching khanacademy tutorials list
       operationId: getTutorialsList
       description: Endpoint to query for tutorials.
       parameters:
         - name: query
           in: query
-          description: The topic, for which we need the list of tutorials, is passed in this parameter (example: astronomy, math, logarithms, marinebiology).
+          description: The topic, for which we need the list of tutorials, is passed in this parameter (example: astronomy, math, logarithms, marinebiology, addition, space etc.).
           required: true
           schema:
             type: string
